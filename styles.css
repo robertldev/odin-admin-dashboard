@@ -6,8 +6,8 @@
 
 #grid-container {
     display: grid;
-    grid-template-columns: clamp(220px, 20%, 300px) 4fr;
-    grid-template-rows: clamp(150px, 20%, 200px) 4fr;
+    grid-template-columns: clamp(240px, 20%, 300px) 4fr;
+    grid-template-rows: clamp(150px, 20%, 160px) 4fr;
     height: 100vh;
 }
 
@@ -15,16 +15,21 @@
     grid-area: 1 / 1 / 3 / 2;
     background-color: #052e16;
     display: grid;
-    column-gap: 20px;
+    column-gap: 15px;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 100px 40px repeat(6, 50px) 40px repeat(3, 50px);
+    grid-template-rows: 100px 40px repeat(6, 40px) 40px repeat(3, 40px);
     color: #fff;
 }
 
 #sidebar > div {
     width: 100%;
     margin: auto 0;
-    padding-left: 20px;
+    padding-left: 30px;
+}
+
+#sidebar > div > img {
+    width: 35px;
+    height: auto;
 }
 
 .sidebar-icons {
@@ -39,8 +44,89 @@
     grid-area: 1 / 2 / 2 / 3;
     background-color: #f0fdf4;
     display: grid;
-    grid-template-columns: 60% 40%;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 1fr 1.5fr;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-icons {
+    width: 30px;
+    height: auto;
+    padding: 0px 30px;
+}
+
+#search-container > form {
+    flex-grow: 1;
+    display: flex;
+    padding-right: 30px;
+}
+
+#search-field {
+    background-color: rgb(211, 211, 211);
+    border-radius: 20px;
+    padding: 2px 20px;
+    height: 30px;
+    border: 0;
+    flex-grow: 1;
+}
+
+#profile-options {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#profile-options > span {
+    padding-left: 20px;
+    padding-right: 50px;
+    font-size: 1.4em;
+}
+
+#avatar-image {
+    width: 50px;
+    height: 50px;
+    padding: 0px 0px;
+}
+
+#profile-welcome {
+    display: flex;
+    align-items: center;
+}
+
+#profile-welcome > img {
+    width: 90px;
+    height: 90px;
+    padding-left: 30px;
+}
+
+#welcome-message {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-left: 30px;
+}
+
+#profile-actions {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 50px;
+}
+
+#profile-actions > div {
+    color: #fff;
+    background-color: #166534;
+    width: 120px;
+    text-align: center;
+    border-radius: 40px;
+    padding: 20px 0px;
 }
 
 #main-content {
